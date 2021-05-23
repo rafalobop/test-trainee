@@ -17,6 +17,7 @@ You will also see any lint errors in the console.
 ### `npm install axios`
 ### `npm install bootstrap`
 ### `npm install react-router-dom`
+### `npm install node-sass`
 
 ### `npm test`
 
