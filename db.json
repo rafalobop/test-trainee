@@ -1,0 +1,25 @@
+{
+    "videos":[
+        {
+        "id": 1,
+        "title": "Curso HTML",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_WSdtn3KLnPDYAHhVjp05Jrt_qgsfrLvyjf0ZCsGLCUTQD5It9-pjMbVGwkM9isiZXo&usqp=CAU",
+        "detalle": "El lenguaje html (hypertext markup language) se utiliza para el desarrollo y creación de páginas web. Se compone de una serie de etiquetas que el navegador interpreta.",
+        "video": "https://www.youtube.com/embed/10GHKjgQIR0"
+        },
+        {
+        "id": 2,
+        "title": "Curso CSS",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYlEA6Vsz0fqBzwPvPnhncrBwAXizgKMXqSNQmLLctUOtagnhT9U2b9zWAAvFBo4jfAYA&usqp=CAU",
+        "detalle": "CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y estructuración de páginas web (HTML o XML).",
+        "video": "https://www.youtube.com/embed/8cSo0ijtkzU"
+        },
+        {
+            "id": 3,
+            "title": "Curso Javascript",
+            "imagen": "https://cdn.iconscout.com/icon/free/png-512/javascript-2038874-1720087.png",
+            "detalle": "JavaScript es el único lenguaje de programación que funciona en los navegadores de forma nativa (lenguaje interpretado sin necesidad de compilación). Por tanto se utiliza como complemento de HTML y CSS para crear páginas webs.",
+            "video": "https://www.youtube.com/embed/riZbwRFMFuw"
+        }
+    ]
+  }

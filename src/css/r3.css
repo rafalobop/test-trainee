@@ -15,6 +15,20 @@
   .card-body {
     text-align: center;
   }
+  .card img {
+    cursor: pointer;
+  }
+  .show {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+  .modal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 640px) {
   .videos-container {
