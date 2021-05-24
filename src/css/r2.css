@@ -24,6 +24,21 @@
     border-radius: 30px;
     transition: 0.3s;
   }
+  table {
+    width: 90%;
+    border-collapse: separate;
+    font-size: 10px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    background: #a1a1a1;
+    border-radius: 20px;
+    color: #f3f3f3;
+  }
+  .img_table {
+    width: 25px;
+    border-radius: 30px;
+  }
 }
 @media screen and (min-width: 640px) {
   .navbar .collapse .nav-item {
@@ -37,5 +52,23 @@
     background: #ccc;
     border-radius: 30px;
     transition: 0.3s;
+  }
+  table {
+    width: 90%;
+    margin: 40px auto;
+    background: #a1a1a1;
+    border-radius: 20px;
+    color: #f3f3f3;
+    font-size: 14px;
+  }
+  .img_table {
+    width: 50px;
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 850px) {
+  table {
+    width: 80%;
+    font-size: 18px;
   }
 }

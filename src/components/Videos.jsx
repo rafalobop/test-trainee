@@ -9,6 +9,7 @@ const Videos = () => {
       .get('https://my-json-server.typicode.com/rafalobop/test-trainee/db')
       .then((res) => {
         setVideos(res.data.videos);
+        console.log(res);
       });
   }, []);
 
