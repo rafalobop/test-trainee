@@ -4,14 +4,19 @@ import Card from '../components/Card';
 
 const Videos = () => {
   const [videos, setVideos] = useState([]);
+  useEffect(async () => {
+    const result = await axios.get(
+      'https://my-json-server.typicode.com/rafalobop/test-trainee/db'
+    );
+    setVideos(result.data.videos);
 
-  useEffect(() => {
-    axios
-      .get('https://my-json-server.typicode.com/rafalobop/test-trainee/db')
-      .then((response) => {
-        setVideos(response.data);
-      });
-  });
+    console.log(videos);
+    // .then((res) => {
+    //   setVideos(res.data.videos);
+    //   console.log(res.data.videos);
+    //   console.log('video', videos);
+    // });
+  }, []);
 
   return (
     <>
@@ -20,7 +25,7 @@ const Videos = () => {
           <div className="row">
             <h3>Videos - Ejercicio R3</h3>
           </div>
-          <Card video={videos} />
+          <Card videos={videos} />
         </div>
       </div>
     </>

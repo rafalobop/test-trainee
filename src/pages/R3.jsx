@@ -1,19 +1,11 @@
 import React from 'react';
 import '../css/r3.css';
-import Card from '../components/Card';
+import Videos from '../components/Videos';
 
-const R3 = ({ video }) => {
+const R3 = (video) => {
   return (
     <>
-      {video.map((v) => {
-        <Card
-          id={v.id}
-          title={v.title}
-          imagen={v.imagen}
-          detalle={v.detalle}
-          video={v.video}
-        />;
-      })}
+      <Videos />
     </>
   );
 };

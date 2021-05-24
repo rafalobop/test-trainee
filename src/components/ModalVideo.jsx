@@ -14,10 +14,10 @@ const ModalVideo = (props) => {
       <Modal isOpen={openModal} toggle={toggle} className={className}>
         <ModalBody>
           <iframe
-            key="3"
+            autoPlay
             src="https://www.youtube.com/embed/10GHKjgQIR0"
             width="380"
-            frameborder="0"
+            frameBorder="0"
             title="video2"
           ></iframe>
         </ModalBody>
