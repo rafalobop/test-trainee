@@ -15,10 +15,8 @@ const Videos = () => {
   return (
     <>
       <div className="videos">
+        <h3>Videos - Ejercicio R3</h3>
         <div className="videos-container">
-          <div className="row">
-            <h3>Videos - Ejercicio R3</h3>
-          </div>
           {videos.map((video) => {
             return <Card key={`video - ${video.id}`} video={video} />;
           })}

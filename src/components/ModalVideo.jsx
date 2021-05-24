@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
-// import html from '../images/html.png';
+import '../css/modal.css';
 
 const ModalVideo = ({ className, video }) => {
   const [openModal, setOpenModal] = useState(false);
@@ -8,13 +8,18 @@ const ModalVideo = ({ className, video }) => {
 
   return (
     <>
-      <img src={video.imagen} alt="css" onClick={toggle} />
+      <img
+        src={video.imagen}
+        alt="css"
+        onClick={toggle}
+        title="haga click para ver el video"
+      />
       <Modal isOpen={openModal} toggle={toggle} className={className}>
         <ModalBody>
           <iframe
             autoPlay
             src={video.video}
-            width="300"
+            width="250"
             frameBorder="0"
             title="video2"
           ></iframe>

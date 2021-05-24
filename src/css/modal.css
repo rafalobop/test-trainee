@@ -1,0 +1,15 @@
+@media screen and (min-width: 320px) {
+  .modal-content {
+    width: 280px;
+    margin: 0px auto;
+  }
+}
+@media screen and (min-width: 640px) {
+  .modal-content {
+    width: 620px;
+  }
+  iframe {
+    width: 590px;
+    height: 200px;
+  }
+}
