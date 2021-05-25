@@ -13,31 +13,33 @@ const Table = () => {
         data: weather,
         loading: false,
       });
-      //   console.log(`weather`, weather.request);
-      //   const weatherData = Object.values(weather);
-      //   console.log(weatherData);
     });
   }, []);
 
-  const datosClima = Object.values(weather);
+  const datosClima = Object.values(weather.data);
+  // const datosClima = Object.values(weather);
+  console.log(datosClima);
+  const info = datosClima.map((datos) => {
+    // console.log(datos);
+    return datos;
+  });
 
   return (
     <>
-      <tbody>
-        {/* <tr>
-          <th>{datosClima[0].location.name}</th>
-          <th>{datosClima[0].current.temperature}</th>
-          <th>{datosClima[0].current.humidity}</th>
-          <th>{datosClima[0].current.precip}</th>
-          <th>{datosClima[0].current.weather_descriptions[0]}</th>
-          <th>
-            <img
-              className="img_table"
-              src={datosClima[0].current.weather_icons[0]}
-            ></img>
-          </th>
-        </tr> */}
-      </tbody>
+      {info.map((dato) => {
+        return (
+          <tr>
+            <th key="1">{dato.name}</th>
+            <th key="2">{dato.temperature}</th>
+            <th key="3">{dato.humidity}</th>
+            <th key="4">{dato.precip}</th>
+            <th key="5">{dato.weather_descriptions}</th>
+            <th key="6">
+              <img src={dato.weather_icons} className="img_table" />
+            </th>
+          </tr>
+        );
+      })}
     </>
   );
 };

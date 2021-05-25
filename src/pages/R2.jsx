@@ -16,7 +16,9 @@ const R2 = () => {
               <th>Icono</th>
             </tr>
           </thead>
-          <Table />
+          <tbody>
+            <Table />
+          </tbody>
         </table>
       </div>
     </div>
