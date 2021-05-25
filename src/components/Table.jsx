@@ -24,7 +24,7 @@ const Table = () => {
   return (
     <>
       <tbody>
-        <tr>
+        {/* <tr>
           <th>{datosClima[0].location.name}</th>
           <th>{datosClima[0].current.temperature}</th>
           <th>{datosClima[0].current.humidity}</th>
@@ -36,7 +36,7 @@ const Table = () => {
               src={datosClima[0].current.weather_icons[0]}
             ></img>
           </th>
-        </tr>
+        </tr> */}
       </tbody>
     </>
   );
